@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: rgba(1, 1, 1, 0.01);
+  background-image: url("newbackground.jpg");
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Start of first logo animation appearing */
+
+#splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: splash 2s ease-in-out forwards;
+}
+
+#logo {
+  width: 600px;
+  height: auto;
+  animation: logo 1s ease-in-out forwards;
+}
+
+@keyframes splash {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* logo dissappears */
+/* End of first logo animation  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* the mini logo which appears on top of the student details table */
+.logo img {
+  width: 260px;
+  opacity: 0.6;
+  transform: translateY(-50px);
+  border-radius: px;
+  animation: logo-fade-in 2s ease-out forwards;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+7 .logo img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Student details information cards */
+.card {
+  margin-top: 20px;
+  background-color: #6a606096;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: card-fade-in 2s ease-out 0.5s forwards;
+}
+
+/* Student details information card heading */
+.card-header {
+  background-color: #c0392b;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.student {
+  margin-bottom: 20px;
+  border-left: 5px solid #fc0;
+  padding-left: 10px;
+}
+
+.student h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.student p {
+  margin: 0;
+  font-size: 16px;
+  color: #b9b7b7;
+}
+
+/* Beginning of second animation with logo and table */
+
+/* mini logo animation */
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Table animation */
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylestore.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./cineflexnew.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li>
+          <a
+            href="file:///Users/anudagunarathna/Desktop/HTML/html_CW/Movies.html"
+            >Movies</a
+          >
+        </li>
+        <li><a href="#">TV-Shows</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Comments</a></li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li>
+          <a href="About Us/Aboutus.html">About Us</a>
+          <li><a href="#" id="cartBtn">Cart</a></li>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Cineflex-Online <br />Merchandise</h1>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- card -->
+    <div class="container">
+      <div class="product" id="tshirts">
+        <img class="card" src="batman T.jpeg" alt="Btshirt" />
+        <div class="itemname">
+          <h3>Marvel DC batman T shirt</h3>
+          <div class="price">&pound;30</div>
+        </div>
+        <input
+          type="number"
+          id="prod1"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('B Tshirt', document.getElementById('prod1').value , 30)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="tshirts">
+        <img
+          class="card"
+          style="width: 350px"
+          src="john wick T.jpg"
+          alt="jtshirt"
+        />
+        <div class="itemname">
+          <h3>John Wick 4 T shirt</h3>
+          <div class="price">&pound;18</div>
+        </div>
+        <input
+          type="number"
+          id="prod2"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('J Tshirt',document.getElementById('prod2').value , 18)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="tshirts">
+        <img
+          class="card"
+          style="width: 350px"
+          src="the witcher t.jpeg"
+          alt="wtshirt"
+        />
+        <div class="itemname">
+          <h3>The witcher T shirt</h3>
+          <div class="price">&pound;10</div>
+        </div>
+        <input
+          type="number"
+          id="prod3"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('W Tshirt',document.getElementById('prod3').value , 10)"
+        >
+          Add to cart
+        </button>
+      </div>
+      <!------------------------------------------------------------------------------------------------------------------------------->
+
+      <div class="product" id="Posters and arts">
+        <img
+          class="divimg"
+          style="width: 350px"
+          src="Dc batman art.jpg"
+          alt="B art"
+        />
+        <div class="itemname">
+          <h3>Marvel DC batman poster and art</h3>
+          <div class="price">&pound;12</div>
+        </div>
+        <input
+          type="number"
+          id="prod4"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('B art', document.getElementById('prod4').value , 12)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="Posters and arts">
+        <img class="divimg" src="johnwick4art.jpg" alt="J art" />
+        <div class="itemname">
+          <h3>John Wick 4 poster and art</h3>
+          <div class="price">&pound;35</div>
+        </div>
+        <input
+          type="number"
+          id="prod5"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('j art', document.getElementById('prod5').value , 35)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="Posters and arts">
+        <img
+          class="divimg"
+          style="width: 350px"
+          src="witcher poster.jpg"
+          alt="W art"
+        />
+        <div class="itemname">
+          <h3>The witcher poster and art</h3>
+          <div class="price">&pound;25</div>
+        </div>
+        <input
+          type="number"
+          id="prod6"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('Racing Gloves', document.getElementById('prod6').value , 25)"
+        >
+          Add to cart
+        </button>
+      </div>
+      <!------------------------------------------------------------------------------------------------------------------------------->
+
+      <div class="product" id="comics">
+        <img
+          class="divimg"
+          style="width: 350px"
+          src="Batman_Comic_Book.gif"
+          alt="B comic"
+        />
+        <div class="itemname">
+          <h3>Marvel DC batman comic book</h3>
+          <div class="price">&pound;50</div>
+        </div>
+        <input
+          type="number"
+          id="prod7"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('B comic', document.getElementById('prod7').value , 50)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="comics">
+        <img
+          class="divimg"
+          style="width: 350px"
+          src="johnwick 4 book.jpg"
+          alt="J comic"
+        />
+        <div class="itemname">
+          <h3>The john wick 4 comic book</h3>
+          <div class="price">&pound;20</div>
+        </div>
+        <input
+          type="number"
+          id="prod8"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('j comic', document.getElementById('prod8').value , 20)"
+        >
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product" id="comics">
+        <img
+          class="divimg"
+          style="width: 280px"
+          src="witcher book.jpg"
+          alt="W comic"
+        />
+        <div class="itemname">
+          <h3>The witcher comic book</h3>
+          <div class="price">&pound;15</div>
+        </div>
+        <input
+          type="number"
+          id="prod9"
+          name="quantity"
+          min="1"
+          max="5"
+          value="1"
+        />
+        <button
+          class="btn"
+          onclick="addToCart('w comic', document.getElementById('prod9').value , 15)"
+        >
+          Add to cart
+        </button>
+        <!------------------------------------------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <!-- Cart  -->
+    <div class="cart-popup">
+        <input type="text" name="name" id="name" placeholder="Name"> <br><br>
+        <input type="text" name="email" id="email" placeholder="E-mail"> <br><br>
+        <button class="close-btn"> X </button>
+        <h2>Your Cart :-</h2>
+        <ul class="cart-items" id="cart">
+        </ul><br>
+        <h4 id="total"></h4><br>
+        <button class="checkout-btn" id="clear"> Clear </button>
+        <button class="checkout-btn" id="checkout"> Checkout </button>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <!-- Payment Form -->
+            <form>
+                <h1>Order Summary </h1><br>
+                <p> Receipt No. 1203 </p>
+                <p id="payable"></p><br>
+                <hr style="border: 1px solid #ff3939bf;"><br><br>
+                <h1>Payment Details</h1>
+                <small> * indicates a required field </small><br><br>
+                <div class="payment-form">
+                    <label for="card-number"> &nbsp; Card Number *</label>
+                    <input type="text" id="card-number" placeholder="Card Number" required>
+
+                    <label for="cardholder-name"> &nbsp; Cardholder Name *</label>
+                    <input type="text" id="cardholder-name" placeholder="Cardholder Name" required>
+
+                    <label for="expiry-date"> &nbsp; Expiry Date *</label>
+                    <label for="security-code" style="margin-left: 36.5%;">Security Code *</label><br>
+
+                    <input type="date" id="expiry-date" placeholder="expiry-date" required>
+
+                    <input type="text" id="security-code" placeholder="security code" required><br>
+
+                    <label for="billing-address"> &nbsp; Billing Address *</label>
+                    <input type="text" id="billing-address" placeholder="Billing Address" required>
+
+                    <label for="E-mail"> &nbsp; E-mail *</label>
+                    <input type="text" id="e-mail" placeholder="E-mail" required>
+
+                    <button type="reset" id="reset"> Clear </button>
+                    <button type="submit" id="submit">Submit Payment</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="backtotop">
+        <a href="#"> Back to top </a>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="col-1">
+            <br>
+            <h3>About Us</h3>
+            <br>
+            <p> Welcome to CINEFLEX, your ultimate destination for discovering and enjoying the best trending movies,TV
+                shows, anime series,and more. We are dedicated to providing a comprehensive platform that caters to all
+                your entertainment needs.<a href="#">for more..</a></p>
+        </div>
+        <div class="col-2">
+            <h3>Explore</h3>
+            <br>
+            <a href="HomePage.html">Home</a>
+            <a href="Movies.html">Movies</a>
+            <a href="TvShows.html">TV-Shows</a>
+            <a href="Anime.html">Anime</a>
+            <a href="#"><br>Cartoons</a>
+            <a href="#">Shop</a>
+            <a href="#">Comments</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="#">Site Map</a>
+            <a href="About Us/Aboutus.html">About Us</a>
+        </div>
+        <div class="col-3">
+            <h3>Online Shop</h3>
+            <br><br>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV-Shows</a>
+            <a href="#">Anime</a>
+            <a href="#">Shop</a>
+            <a href="#">Comments</a>
+            <a href="#">Quiz</a>
+            <a href="#">Site Map</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="col-4">
+            <h3>Follow Us<br></h3>
+            <a href="https://www.facebook.com/profile.php?id=100093968542581&_rdc=1&_rdr"><img src="FB.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com/cineflexweb/"><img src="Insta.png" alt="Instagram"></a>
+            <a href="#"><img src="LinkedIn.png" alt="LinkedIn"></a>
+            <a href="#"><img src="Twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="col-6">
+            <a href="https://www.youtube.com/watch?v=WHs6z9RPGtA">Page Editor&nbsp; &#x21fe;</a>
+        </div>
+        <div class="col-5">
+            <h3>Contact Us</h3><br>
+            <p>+94775229603</p>
+            <p>Cineflexweb@gmail.com</p><br><br>
+            <p>Copyright &copy; 2023; Designed by <span id=Student1>Anuda</id>
+            </p>
+        </div>
+    </div>
+    <script src="stylestore.js"></script>
+  </body>
+</html>
